@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 65vh 35vh;
+    .item:nth-of-type(1) {
+        background: #0D1819;
+        text-align: center;
+        img {
+            object-fit: cover;
+        }
+        p {
+            position: relative;
+            top: -50px;
+            width: 800px;
+            height: 30px;
+            margin: auto;
+            text-align: center;
+            color: rgba(250, 250, 250, .8);
+            font-size: 20px;
+
+        }
+    }
+    .item:nth-of-type(2) {
+        background: rgb(139, 2, 2);
+        text-align: center;
+        form {
+            text-align: center;
+            input {
+                display: block;
+                width: 600px;
+                height: 30px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 20px;
+                letter-spacing: 1px;
+                font-weight: bold;
+                text-align: center;
+
+                
+            }
+            #peticion {
+                z-index: 1;
+                margin-top: 0;
+                // opacity: 50%;
+                background: none;
+                border: none;
+                position: relative;
+                top: 10px;
+                border-bottom: 2px solid orange;
+                color: transparent;
+                
+            }
+            #peticionsale {
+                z-index: 2;
+                background: none;
+                border: none;
+                // border-bottom: 2px solid orange;
+                border: none;
+                margin-top: -25px;
+                // position: relative;
+                // top: -34px;
+            }
+            #inputPregunta {
+                background: none;
+                border: none;
+                border-bottom: 2px solid orange;
+                margin-top: 15px;
+            }
+            button {
+                margin-top: 20px;
+                width: 120px;
+                height: 30px;
+                border-radius: 3px;
+                background: rgb(90, 1, 1);
+                border-color: rgb(90, 1, 1);
+                font-weight: bold;
+                color: rgb(177, 177, 177);
+            }
+        }
+    }
+}
